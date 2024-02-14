@@ -1,0 +1,252 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+}
+.card{
+    width: 350px;
+    height: 500px;
+    background-color: #27272a;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    border-radius: 15px;
+    position: relative;
+}
+.card .banner{
+    width: 350px;
+    border-radius: 15px 15px 0 0;
+}
+.header{
+    position: absolute;
+    top: 4rem;
+    display: flex;
+    align-items: end;
+}
+.profile{
+    background-color: #27272a;
+    width: 105px;
+    padding: 4px;
+    margin-left: 1.5rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.profile .profile_picture{
+    width: 100px;
+    height: 100px;
+}
+.badge{
+    background-color: #18181b;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 4px;
+    width: auto;
+    height: 25px;
+    position: absolute;
+    left: 12rem;
+    margin-bottom: 0.5rem;
+}
+.badge img{
+    width: auto;
+    height: 25px;
+    margin: 0 2px;
+}
+.about-1{
+    background-color: #18181b;
+    width: 90%;
+    margin: 4rem auto 0 auto;
+    padding: 6px;
+    border-radius: 10px 10px 0 0;
+}
+.about-1 h1{
+    color: #fff;
+    font-size: 24px;
+}
+.about-1 p{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.about-1 hr{
+    background-color: #fff;
+    border: 0;
+    height: 1px;
+}
+.about-2{
+    background-color: #18181b;
+    width: 90%;
+    height: 210px;
+    margin: 0 auto 0 auto;
+    padding: 6px;
+    border-radius: 0 0 10px 10 px;
+    overflow: auto;
+}
+.about-2 .title{
+    color: #fff;
+    font-weight: bold;
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+}
+.about-2 .desc{
+    color: #fff;
+    margin-bottom: 1rem;
+}
+.play{
+    display: flex;
+    justify-content: start;
+    margin-bottom: 1rem;
+}
+.play .left{
+    background-color: #27272a;
+    border: 10px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.left img{
+    width: 75px;
+    height: 75px;
+}
+.icon{
+    position: absolute;
+    background-color: #18181b;
+    width: 35px;
+    height: 35px;
+    padding: 6px;
+    border-radius: 50%;
+    left: 4.5rem;
+    top: 4.5rem;
+}
+.icon img{
+    width: 25px;
+    height: 25px;
+}
+.right{
+    margin-left: 0.5rem;
+}
+.right p{
+    color: #fff;
+}
+.role{
+    display: flex;
+    margin-bottom: 1rem;
+}
+.role-1{
+    background-color: #27272a;
+    padding: 5px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    margin-right: 0.5rem;
+}
+.role-1 h1{
+    color: #fff;
+    font-size: 12px;
+}
+.r-red{
+    width: 10px;
+    height: 10px;
+    background-color: #ff0000;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    margin-top: 7.5px;
+}
+.r-purple{
+    width: 10px;
+    height: 10px;
+    background-color: #800080;
+    border-radius: 50%;
+    margin-right: 0.3rem;
+    margin-top: 7.5px;
+}
+.connections{
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+.con-1{
+    border-radius: 10px;
+    border: 1px #fff solid;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
+.left-con{
+    display: flex;
+    align-items: center;
+}
+.left-con img{
+    width: 30px;
+    height: auto;
+    margin-right: 0.5rem;
+}
+.left-con p{
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: 0.5rem;
+    margin-top: 15px;
+}
+.left-con .verified{
+    width: 15px;
+    height: 15px;
+}
+.right-con{
+    text-decoration: none;
+}
+
+@media screen and (min-width:700px){
+    .card{
+        width: 500px;
+        height: 600px;
+    }
+    .card .banner{
+        width: 500px;
+    }
+    .header{
+        top: 8rem;
+    }
+    .badge{
+        left: 22rem;
+        margin-bottom: 2rem;
+    }
+    .profile{
+        width: 125px;
+    }
+    .profile .profile_picture{
+        width: 120px;
+        height: 120px;
+    }
+    .about-1{
+        margin-top: 5rem;
+    }
+    .about-2{
+        height: 250px;
+    }
+}
+
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: #18181b;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+  }
